@@ -2,14 +2,14 @@
 require 'FizzBuzz.php';
 class FizzBuzzTest extends PHPUnit_Framework_TestCase
 {
-    private $_fizzBuzz;
+    private $checkfizzBuzz;
     public function getFizzBuzz()
     {
-        if (!$this->_fizzBuzz instanceof FizzBuzz)
+        if (!$this->checkfizzBuzz instanceof FizzBuzz)
         {
-            $this->_fizzBuzz = new FizzBuzz();
+            $this->checkfizzBuzz = new FizzBuzz();
         }
-        return $this->_fizzBuzz;
+        return $this->checkfizzBuzz;
     }
     public function testRangeFizzBuzz()
     {
